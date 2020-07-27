@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="card m-auto" style="width:30rem;">
+    <div class="card-body">
+
+        <pre class="prettyprint">
+        <pre><code class="language-py">def findZ(mat, z):
+    ##############################
+    a = len(mat) 
+    b = 0
+    while a > -1 and b <= a-1:
+        if mat[a-1][b] < z:
+            b = b+1
+        elif mat[a-1][b] > z:
+            a = a-1
+        else:
+            return True
+    return False
+    ##############################
+
+
+
+mat =[[3,7,8,10,17],
+       [5,20,28,30,33],
+       [7,27,32,35,37],
+       [9,30,35,37,39],
+       [10,33,38,41,45]];
+
+print findZ(mat, 32)   #True
+print findZ(mat, 31)   #False
+print findZ(mat, 45)   #True
+print findZ(mat,40)    #False
+    </code></pre>
+        </pre>
+    </div>
+</div>
