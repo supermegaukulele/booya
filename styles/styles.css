@@ -43,3 +43,33 @@
         padding-right: 1.1rem;
     }
 }
+
+.cal-number {
+    height: 50px;
+    width: 50px;
+}
+
+.cal-operator {
+    height: 50px;
+    width: 50px;
+}
+
+.cal-decimal {
+    height: 50px;
+    width: 50px;
+}
+
+.cal-clear {
+    height: 50px;
+    width: 50px;
+}
+
+.cal-equal {
+    height: 50px;
+    width: 150px;
+}
+
+.cal-screen {
+    height: 50px;
+    width: 250px;
+}

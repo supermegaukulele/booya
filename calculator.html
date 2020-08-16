@@ -3,58 +3,111 @@ layout: default
 ---
 <div class="container">
     <div class="calculator">
-        <input type="text" class="screen" value="0" disabled />
 
-        <div class="buttons">
-            <button type="button" class="btn btn-outline-info operator" value="/">/</button>
-            <button type="button" class="btn btn-outline-info operator" value="%">%</button>
-            <div class="row">
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="7">7</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="8">8</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="9">9</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info operator" value="*">x</button>
-                </div>
+        <div class="row ">
+            <div class="col-">
+                <input type="text" class="btn btn-outline-info cal-screen text-right" value="" disabled />
             </div>
-            <div class="row">
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="4">4</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="5">5</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="6">6</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info operator" value="-">-</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="1">1</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="2">2</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info number" value="3">3</button>
-                </div>
-                <div class="col-">
-                    <button type="button" class="btn btn-outline-info operator" value="+">+</button>
-                </div>
-            </div>
-            <button type="button" class="btn btn-outline-info number" value="0">0</button>
+        </div>
 
-            <button type="button" class="btn btn-outline-info number decimal" value=".">.</button>
-            <button type="button" class="btn btn-outline-info number clear" value="all-clear">C</button>
-            <button type="button" class="btn btn-outline-info number equal" value="=">=</button>
+        <div class="cal-buttons">
+            <div class="row ">
+
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="(">(</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value=")">)</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="e">e</button>
+                </div>
+
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="π">&pi; </button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="%">%</button>
+                </div>
+            </div>
+
+
+
+            <div class="row ">
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="sqrt">&radic;</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="7">7</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="8">8</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="9">9</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="*">x</button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="**">a<sup>b</sup></button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="4">4</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="5">5</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="6">6</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="-">-</button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="log">log</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="1">1</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="2">2</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="3">3</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="+">+</button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="ln">ln</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-number" value="0">0</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info number cal-decimal" value=".">.</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info number cal-clear" value="all-clear">C</button>
+                </div>
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info cal-operator" value="/">/</button>
+                </div>
+
+            </div>
+
+            <div class="row ">
+                <div class="col-">
+                    <button type="button" class="btn btn-outline-info number cal-equal" value="=">=</button>
+                </div>
+            </div>
 
         </div>
     </div>
