@@ -43,3 +43,35 @@
         padding-right: 1.1rem;
     }
 }
+
+
+.sidebar {
+    width: 180px;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(235, 233, 233);
+    padding-top: 20px
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 36px
+}
+
+.yummain {
+    margin-left: 180px;
+    font-size: 28px;
+    padding: 0px 10px;
+    background-color: rgb(253, 211, 211);
+}
+
+.sidebarcolor {
+    background-color: rgb(235, 233, 233);
+}
+
+.list-group-item {
+    border: 0 !important;
+}
+
+.submenu {
+    padding: 1px 8px 1px 10px
+}
