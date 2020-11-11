@@ -15,3 +15,19 @@ $(function () {
         }, 300);
     });
 });
+
+
+
+/* $('#upnavbar .navbar-nav a').on('click', function () {
+    $('#upnavbar .navbar-nav').find('li.active').removeClass('active');
+    $(this).parent('li').addClass('active');
+});
+ */
+
+$(document).on('click', '#upnavbar', function () {
+    $(".nav-item").find(".active").removeClass("active");
+})
+
+$(document).ready(function () {
+    $('a[href="' + location.pathname + '"]').closest('.nav-item').addClass('active');
+});
