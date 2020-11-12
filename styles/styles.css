@@ -1,9 +1,15 @@
-.jumbotron {
+.navbar-brand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.jumboindex {
     background-color: #e4e3fc;
 }
 
-.navbar {
-    background-color: white;
+
+.jumboabout {
+    background-color: rgb(243, 226, 204);
 }
 
 .gallery {
@@ -45,33 +51,56 @@
 }
 
 
-.sidebar {
-    width: 180px;
-    position: fixed;
-    height: 100%;
-    background-color: rgb(235, 233, 233);
-    padding-top: 20px
+
+html {
+    scroll-behavior: smooth;
 }
 
-.sidebar a {
-    padding: 6px 8px 6px 36px
+
+main>nav {
+    position: sticky
 }
+
+
+
+
+#sidebar {
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    background-color: #d8fadf;
+    padding-top: 20px;
+    left: 0;
+}
+
+#sidebar a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: rgb(94, 93, 93);
+    display: block;
+}
+
+
+
+#sidebar .nav-link.active,
+#sidebar .nav-link:hover,
+#sidebar .nav-link:focus {
+    color: #060706;
+}
+
+
+
 
 .yummain {
-    margin-left: 180px;
+    margin-left: 160px;
     font-size: 28px;
     padding: 0px 10px;
-    background-color: rgb(253, 211, 211);
+    height: 100%;
+    background-color: rgb(255, 247, 217);
+    height: calc(100vh - 50px);
+    overflow: auto;
 }
 
-.sidebarcolor {
-    background-color: rgb(235, 233, 233);
-}
-
-.list-group-item {
-    border: 0 !important;
-}
-
-.submenu {
-    padding: 1px 8px 1px 10px
+body {
+    position: relative;
 }
