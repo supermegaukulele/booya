@@ -113,8 +113,9 @@ body {
 
 
 .recipe h1 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
     text-align: center;
+    font-size: 35px;
     border-bottom: 1px solid rgb(189, 187, 187);
     line-height: 60px;
 }
