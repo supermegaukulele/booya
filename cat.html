@@ -18,50 +18,15 @@ layout: default
 </div>
 <!-- Grid row -->
 
+
+
 <!-- Grid row -->
 <div class="gallery" id="gallery">
 
-    <!-- Grid column -->
-    <div class="mb-3 pics animation all 1">
-        <img class="img-fluid"
-            src="https://lh3.googleusercontent.com/jaOUN8fVEyx-uEIT74tm6wNfrGLp08nwVAUBNb_qFkDeLj1o29yOkSyJMva31JQCJvuPks8EMqwJw8BlQGynUeCCE4B_WMHxnBnB248wnPXPHqcYk16ZKZiMU2Cj1njGFxq8T1F-E9w=w1920-h1080"
-            alt="Card image cap">
+    {% for catpic in site.data.cat %}
+    <div class="mb-3 pics animation all {{catpic.catagory}}">
+        <img class="img-fluid" src="{{catpic.link}}" alt="Card image cap">
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics animation all 2">
-        <img class="img-fluid"
-            src="https://lh3.googleusercontent.com/jOudz1lunKY0eqPApon6OzXN69o9z4_avpz5T3Om2AWvLsSwhLNqIVCn2-8nXd0ePHdm05NLY2Otcrw_d5k6QFSsv9zdQ3lveeBIBQK6nn9FuxbBRkzLLkGDN8uNQ_LCNmcGpZ3L_js=w1920-h1080"
-            alt="Card image cap">
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics animation all 1">
-        <img class="img-fluid"
-            src="https://lh3.googleusercontent.com/TmlZrAbc6FZLlPvQ1r3NgDZ7_qPlYEDGhKlXz12rmzibeNyOFYDVDpZdTGLjjrOFw6Bk3_m7Gv1EGxuLDKZqXvj-zVOTOM88u7BpsBcn0len5vacdrlw3yDj4ii2q8n7J-Q4QeI5V28=w1920-h1080"
-            alt="Card image cap">
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics animation all 3">
-        <img class="img-fluid"
-            src="https://lh3.googleusercontent.com/ttnEwvUdnt-dHRf3wFKuGBapDphjvH__pfLSbvMEvwd6UKIcQ_5XunyrdtUxdNPWFghEj1Dp9oz8gm1TcCeGMqK_Rh70B6Pupl-DcxB5W-jKjsCYXYxUh4a6rW7_PXORoSh1zGP4Ziw=w1920-h1080"
-            alt="Card image cap">
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics animation all 3">
-        <img class="img-fluid"
-            src="https://lh3.googleusercontent.com/7zSdVOetIpJpfk0rhm95A8GtS2xsc9e8P2gH1eQLIyAaPWQ_1pEWuA1QQnoSN8k991fMMRzgPWMeB5XjEO1xeIHaExzTYM-n3ecIi0Ma1NkQHuLLYKkMEOZbWMP_LXYIP5b6O8imLgU=w1920-h1080"
-            alt="Card image cap">
-    </div>
-    <!-- Grid column -->
-
-
-
+    {% endfor %}
 
 </div>
