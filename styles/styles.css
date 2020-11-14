@@ -12,6 +12,11 @@
     background-color: rgb(243, 226, 204);
 }
 
+
+.catbutton {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .gallery {
     -webkit-column-count: 3;
     -moz-column-count: 3;
