@@ -14,6 +14,10 @@ layout: default
             {% for yumpost in site.data.yum.soup %}
             <li class="nav-item"><a class="nav-link pl-5" href="#{{yumpost.num}}"> {{yumpost.title}}</a></li>
             {% endfor %}
+            <li class="nav-item"><a class="nav-link pl-3" href="#Three">Baking</a></li>
+            {% for yumpost in site.data.yum.baking %}
+            <li class="nav-item"><a class="nav-link pl-5" href="#{{yumpost.num}}"> {{yumpost.title}}</a></li>
+            {% endfor %}
         </nav>
     </nav>
 
@@ -129,5 +133,67 @@ layout: default
 
             {% endfor %}
         </section>
+
+
+        <section id="Tree">
+        </section>
+        {% for yumpost in site.data.yum.baking %}
+        <section id="{{yumpost.num}}">
+            <div class="container">
+                <br>
+                <div class="container bg-light recipe">
+
+
+                    <h1>{{yumpost.title}}</h1>
+
+                    <div class="container foodpic bg-light">
+                        <p>There should be a food picture here</p>
+                        <img src="{{site.baseurl}}/images/cat.jpeg" class="img-fluid" alt="" loading="lazy">
+                        <p>This cat is not food</p>
+                    </div>
+                    <h2>Description</h2>
+                    <p>{{yumpost.description}}</p>
+                    <h2> Ingredients</h2>
+                    <div class="row">
+                        <div class="col">
+
+
+                            <h3>Sauce</h3>
+
+                            <ul>
+                                {% assign ingredientsausey = yumpost.ingredientsause | split: ", " %}
+                                {% for member in ingredientsausey %}
+                                <li>{{ member }}</li>
+                                {% endfor %}
+                            </ul>
+
+                        </div>
+                        <div class="col">
+                            <h3>{{yumpost.title}}</h3>
+                            <ul>
+                                {% assign ingredientmainy = yumpost.ingredientmain | split: ", " %}
+                                {% for member in ingredientmainy %}
+                                <li>{{ member }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2> Directions</h2>
+
+                    <ol> {% assign directiony = yumpost.direction | split: " - " %}
+                        {% for member in directiony %}
+                        <li>{{ member }}</li>
+                        {% endfor %}
+                    </ol>
+
+                    <p>ref: {{yumpost.source}}</p>
+
+                </div>
+            </div>
+
+            {% endfor %}
+        </section>
+
     </div>
 </main>
